@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" lang="de"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hogwarts Hexenkessel</title>
+</head>
+<body>
+    <header>
+        <h1>Hogwarts Hexenkessel</h1>
+        <h3>Kreiere deinen Zaubertrank online</h3>
+    </header>
+    <div id="form">
+    <form id="myForm" >
+        <fieldset>
+            <legend>Name deines Elexiers</legend>
+            <textarea id="Name" name="Name deines Elexiers" form="usrform" value="1">Gib hier den Namen ein</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Beschreibung</legend>
+            <textarea id="nebenwirkung" name="nebenwirkung" form="usrform">Gib hier ein, was dein Elexier kann</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Wirkung</legend>
+            <select name="Wirkung" id="Wirkung">
+                <option value="Liebe">Liebestrank</option>
+                <option value="Unsichtbar">Unsichtbarkeit</option>
+                <option value="vergessen">Vergessen lassen</option>
+                <option value="kraft">Kräftetrank</option>
+                <option value="tanz">Tanztrank</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Dauer der Wirkung</legend>
+            <span id="time">
+                <span>
+                    1 Tag
+                    <input type="range" name="dauer" id="dauer" min="1" max="50" step="1" value="1">
+                    50 Tage
+                </span>
+            </span>
+        </fieldset>
+        <fieldset>
+            <legend>Anweisungen</legend>
+
+            <h4>Ingridienzen</h4>
+            <input type="checkbox" name="ingridienzen" id="schlangenzunge" value="schlangenzunge" price="1.30,09">
+            <label  for="ingridienzen">Schlangenzunge</label>
+            <input type="number" name="schlangenzungeAmount" id="schlangenzungeAmount" min="1" max="20">
+            <input type="checkbox" name="ingridienzen" id="pferdeauge" value="pferdeauge" price="0.120,13">
+            <label for="pferdeauge">Pferdeauge</label>
+            <input type="number" name="pferdeaugeAmount" id="pferdeaugeAmount" min="1" max="20">
+            <input type="checkbox" name="ingridienzen" id="fischdarm" value="fischdarm" price="4.99,03">
+            <label for="fischdarm">Fischdarm</label>
+            <input type="number" name="fischdarmAmount" id="fischdarmAmount" min="1" max="20">
+            <input type="checkbox" name="ingridienzen" id="ganzespinnen" value="ganzespinnen" price="9.00,13">
+            <label for="ganzespinnen">Ganze Spinnen</label>
+            <input type="number" name="spinnenAmount" id="spinnenAmount" min="1" max="20">
+
+            <h4>Temperatur</h4>
+            <input type="radio" name="temperatur" id="kochen" value="kochen" checked />
+            <label for="kochen">Kochen</label>
+            <input type="radio" name="temperatur" id="abkuehlen" value="abkuehlen" />
+            <label for="abkuehlen">Abkühlen</label>
+            <span>
+            <span id="gradrange">
+                10°C
+                <input type="range" name="temperatur" id="grad" min="10" max="100" step="10" value="10">
+                100°C
+            </span>
+            </span>
+
+            <h4>Umrühren</h4>
+            <input type="checkbox" name="umrühren" id="rühren" value="rühren">
+            <label for="rühren">Rühren mit Druck</label>
+
+            <h4>Dauer</h4>
+            <span>
+            <span id="fuchs">
+            1 Minuten
+            <input type="range" name="dauer" id="Dauer" min="1" max="60" step="10" value="10">
+            60 Minuten
+            </span>
+        </span>
+
+            <h4>Konsitenz</h4>
+            <select name="Konsitenz" id="Konsitenz">
+                <option value="fluessig">Flüssig</option>
+                <option value="klebrig">Klebrig</option>
+                <option value="zäh">Zäh</option>
+                <option value="stueckig">Stückig</option>
+            </select>
+            <h4>Farbe</h4>
+            <select name="farbe" id="farbe">
+                <option value="gruen">Grün</option>
+                <option value="purpur">Purpur</option>
+                <option value="ocker">Ocker</option>
+            </select>
+        </fieldset>
+    </form>
+</div>
+    <div id="display">
+        ...
+
+    </div>
+<div id="button">
+        <button id="hexhex">Los geht's!</button>
+</div>
+    <footer>
+       <h3>IMPRESSUM:</h3>
+       <p>Prof. Severus Snape</p>
+       <p>Professor for defence against the dark arts and headmaster of Slytherin</p>
+       <p>Hogwarts School of Witchcraft and Wizardy</p>
+       <p>High Street 1 - 28, AB55 Dufftown, Banffshire, Scottland, UK </p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    background-image: url(hogwarts-rpg-game-warner-bros.jpg);
+    background-color: darkblue;
+    color: gold;
+}
+@font-face{
+    font-family: harald;
+    src: url(harryp-readme.txt);
+}
+header{
+    font-family: harald;
+    color: gold;
+    text-align: center;
+}
+footer{
+    color: white;
+    background-color: gray;
+}
+#Konsitenz, #farbe, #fuchs {
+    display: inline;
+}

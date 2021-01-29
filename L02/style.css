@@ -1,0 +1,161 @@
+/* Styling für das Kartenspiel */
+
+body {
+	background: #000000;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* grauer Header mit Name & Matrikelnummer */
+header {
+	background: #808080;
+	text-align: center;
+	height: 1.8em;
+}
+
+header > p {
+	padding: 0.3%;
+}
+
+#computer, #player{
+    clear:both;
+    background-color: #DEB887;
+	margin: 1% 0 2% 2%;
+    padding: 3px;
+	width: 95%;
+	height: 210px;
+   	border-radius: 1em;
+}
+
+#draw #discard {
+	clear: both;
+	margin-left: 10em;
+	margin-right: 5em;
+}
+
+.Piles {
+	float: left;
+	width: 95px;
+	height: 168px;
+	margin: 0 2% 2% 15%;
+	border-color: #DEB887;
+	border-style: dotted;
+	border-width: 1%;
+	border-radius: 10px;
+}
+
+.redCard:hover, .greenCard:hover, .blueCard:hover, .yellowCard:hover {
+	box-shadow: 0 4px 16px 0 #363333;
+	margin-top: 1%;
+	transition: ease, 0.5s;
+}
+
+.redCard {
+	float: left;
+	box-shadow: 0 4px 8px 0 #645d5d;
+	width: 95px;
+	height: 168px;
+	background: #ffffff;
+	border-radius: 10px; /* runde Ecken */
+	margin: 2% 0% 2% 2%;
+	box-sizing: border-box;
+	border-color: #f00;
+	border-style: double;
+	border-width: 1em;
+}
+
+.blueCard {
+	float: left;
+	box-shadow: 0 4px 8px 0 #645d5d;
+	width: 95px;
+	height: 168px;
+	background: #ffffff;
+	border-radius: 10px; /* runde Ecken */
+	margin: 2% 0% 2% 2%;
+	box-sizing: border-box;
+	border-color: #00f;
+	border-style: double;
+	border-width: 1em;
+}
+
+.greenCard {
+	float: left;
+	box-shadow: 0 4px 8px 0 #645d5d;
+	width: 95px;
+	height: 168px;
+	background: #ffffff;
+	border-radius: 10px; /* runde Ecken */
+	margin: 2% 0% 2% 2%;
+	box-sizing: border-box;
+	border-color: #00ff00;
+	border-style: double;
+	border-width: 1em;
+}
+
+.yellowCard {
+	float: left;
+	box-shadow: 0 4px 8px 0 #645d5d;
+	width: 95px;
+	height: 168px;
+	background: #ffffff;
+	border-radius: 10px; /* runde Ecken */
+	margin: 2% 0% 2% 2%;
+	box-sizing: border-box;
+	border-color: #fffb2a;
+	border-style: double;
+	border-width: 1em;
+}
+
+.hiddenCard { /*Design mittels Eigenrecherche gefunden und angewandt, siehe https://leaverou.github.io/css3patterns/#half-rombes */
+	float: left;
+	box-shadow: 0 4px 8px 0 #645d5d;
+	width: 95px;
+	height: 168px;
+	border-radius: 10px; /* runde Ecken */
+	margin: 1% 0% 2% 2%;
+	background: #36c;
+	background:
+	linear-gradient(115deg, transparent 75%, rgba(255,255,255,.8) 75%) 0 0,
+	linear-gradient(245deg, transparent 75%, rgba(255,255,255,.8) 75%) 0 0,
+	linear-gradient(115deg, transparent 75%, rgba(255,255,255,.8) 75%) 7px -15px,
+	linear-gradient(245deg, transparent 75%, rgba(255,255,255,.8) 75%) 7px -15px,
+	#36c;
+	background-size: 15px 30px;
+}
+
+.hiddenCard:hover {
+	box-shadow: 0 4px 16px 0 #363333;
+}
+
+.hiddenCardtransition {
+	margin-bottom: 0.5%;
+	transition: ease, 0.5s;
+}
+
+.cardNumber {
+	color: #000;
+	font-size: 3.5em;
+	margin-left: 28%;
+	margin-top: 55%
+}
+
+#start {
+	float: left;
+	box-sizing: border-box;
+	border-radius: 2em;
+	margin-top: 4.3%;
+	margin-left: 15%;
+	background: #36c;
+	width: 15%;
+	height: 20%;
+	border-color: #36d;
+	border-style: solid;
+	border-width: 1em;
+}
+
+footer {
+	color: #808080;
+	text-align: center;
+	clear: left;
+	margin-top: 0,5%;
+	font-size: 1em;
+}
